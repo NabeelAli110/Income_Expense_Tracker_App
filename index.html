@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- main heading section -->
+    <header>
+        <h1>Expense Tracker</h1>
+    </header>
+    <!-- main heading section end-->
+
+    <!-- it is main section of application -->
+    <main>
+        <!-- add transaction section start -->
+        <!-- <section class="add-transaction">
+            <h2>Add Transaction</h2>
+            <form id="transaction-form">
+                <input type="text" id="description" placeholder="Description" required>
+                <input type="number" id="amount" placeholder="Amount" required>
+                <input type="date" id="date" required>
+                
+                <button type="submit">Add Transaction</button>
+            </form>
+        </section> -->
+        <!-- add transaction section end -->
+
+        <!-- add income section start -->
+        <section class="add-income">
+            <h2>Add Income</h2>
+            <form id="income-form">
+                <input type="text" id="income-description" placeholder="Income Description" required>
+                <input type="number" id="income-amount" placeholder="Income Amount" required>
+                <input type="date" id="income-date" required>
+
+                <button type="submit">Add Income</button>
+            </form>
+        </section>
+        <!-- add income section end -->
+
+        <!-- add expesne section start -->
+        <section class="add-expense">
+            <h2>Add Expense</h2>
+            <form id="expense-form">
+                <input type="text" id="expense-description" placeholder="Expense Description" required>
+                <input type="number" id="expense-amount" placeholder="Expense Amount" required>
+                <input type="date" id="expense-date" required>
+                <select id="category">
+                    <option value="Food">Food</option>
+                    <option value="Travel">Travel</option>
+                    <option value="Entertainment">Entertainment</option>
+                    <option value="Others">Utilities</option>
+                    <option value="Others">Others</option>
+                </select>
+                <button type="submit">Add Expense</button>
+            </form>
+        </section>
+        <!-- add expense section end -->
+
+        <!-- transactoion history section start -->
+        <section class="transactions">
+            <h2>Transaction History</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Description</th>
+                        <th>Amount</th>
+                        <th>Category</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="transaction-list"></tbody>
+            </table>
+        </section>
+        <!-- transaction history section end -->
+
+        <!-- summary section start -->
+        <section class="summary">
+            <h2>Summary</h2>
+            <p>Total Income: <span id="income">0</span></p>
+            <p>Total Expense: <span id="expense">0</span></p>
+            <p>Balance: <span id="balance">0</span></p>
+        </section>
+        <!-- summary section end -->
+    </main>
+    <!-- it is main section of application -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>

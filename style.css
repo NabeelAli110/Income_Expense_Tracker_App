@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(81, 81, 81);
+    color: #333;
+}
+/* main heading section */
+header {
+    background-color: rgb(81, 81, 81);
+    /* padding: 1.5rem; */
+    color: rgba(238, 238, 238, 0.695);   
+    font-size: 1.8rem;
+    border-bottom: 8px solid black;
+    border-top: 8px solid black;
+    border-radius: 100px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+/* main heading section end */
+
+main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    background-image: url(images/6-Best-Expense-Tracking-Apps-for-Android.avif);
+    /* position: static; */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 2.5rem;
+}
+
+h2 {
+    border-bottom: 2px solid  rgba(68, 60, 60, 0.695);
+    padding-bottom: 0.5rem;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+form input, form select, form button {
+    padding: 0.9rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+form button {
+    background-color: rgb(81, 81, 81);
+    color: #fff;
+    font-size: .95rem;
+    font-weight: bold;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.add-income, .add-expense {
+    margin-bottom: 2rem;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background-color: #f1f1f1;
+}
+
+.summary p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+@media (max-width: 768px) {
+    /* Reduce padding and font sizes for smaller screens */
+    main {
+        padding: 0.5rem;
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    table {
+        font-size: 0.8rem;
+    }
+
+    table th, table td {
+        padding: 0.3rem;
+    }
+
+    form input, form select, form button {
+        font-size: 0.9rem;
+        padding: 0.7rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Mobile-specific styles */
+    h1, h2 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    form input, form select, form button {
+        font-size: 0.8rem;
+        padding: 0.5rem;
+    }
+
+    table {
+        font-size: 0.7rem;
+    }
+
+    table th, table td {
+        padding: 0.2rem;
+    }
+}
